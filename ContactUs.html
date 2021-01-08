@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .ww {
+            color: white;
+        }
+        
+        .bg {
+            background-image: url(img/header3.jpg);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+    <!-- Icon and Search Bar -->
+
+    <div class="container-fluid">
+        <div class="row bg">
+
+            <div class="col-lg-2 col-md-2 mt-3 mb-2">
+                <img src="img/logo.png" style="height: 80px;width: 80px">
+            </div>
+            <div class="col-lg-7 col-md-7 ">
+            </div>
+            <div class="col-lg-3 col-md-3" style="margin-top:15px">
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <div class="row" style="margin-top: 10px">
+                    <a href="https://www.facebook.com/"><img class="fa ml-4" src="img/facebook-icon.png" height="30px" width="30px"></a>
+                    <a href="https://www.gmail.com/"><img class="fa" src="img/gmail.png" height="30px" width="30px" style="margin-left: 15px "></a>
+                    <a href="https://www.twitter.com/"><img class="fa" src="img/twitter.png" height="30px" width="30px" style="margin-left: 15px "></a>
+                    <a href="https://www.instagram.com/"><img class="fa" src="img/instagram.png" height="30px" width="30px" style="margin-left: 15px "></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark nav-fill">
+        <a class="navbar-brand" href="main.php"><b>Shing Pong</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="main.php">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.php">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Products.php">Products</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Contact us Form -->
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <br>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 white border rounded-top rounded-bottom" style="background-color:#074377">
+
+
+                <form>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label ww mt-3">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control ww mt-3" id="inputName" placeholder="Enter Your Name Here">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label ww">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputphone" class="col-sm-2 col-form-label ww">Phone:</label>
+                        <div class="col-sm-10">
+                            <input type="number" min="0" class="form-control" id="inputnumber" placeholder="0312-3456789">
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0 ww">Role:</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label ww" for="gridRadios1">
+            Student
+          </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label ww" for="gridRadios2">
+            Teacher
+          </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label ww" for="inlineFormCustomSelect">Preference:  </label>
+                            <div class="col-sm-10"><select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option value="1">Karachi</option>
+        <option value="2">Sindh</option>
+        <option value="3" selected>Lahore</option>
+        <option value="4">KPK</option>
+      </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <div class="form-group" align="left">
+                        <label class="ww" for="Textarea">Message:</label>
+                        <textarea class="form-control " id="textarea" rows="8"></textarea>
+                    </div>
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Submit</button>
+
+
+                </form>
+            </div>
+
+
+            <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-4 col-md-4">
+                <h3>Head Office :</h3>
+                <p><b>ASM Towers</b> near Link Road Lahore , Punjab ,<br> Pakistan</p>
+
+                <br><br><br><br>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.8483182480186!2d74.23880001462756!3d31.390745660673183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391901e6e30bb94b%3A0x7facd7c9c099672b!2sUniversity+Of+Lahore!5e0!3m2!1sen!2s!4v1552595361215"
+                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <!-- Footer Links -->
+        <div class="container-fluid">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-5 col-md-5 col-sm-5 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class=" mt-3 mb-4 ml-3"><b>ABOUT US</b></h5>
+                    <p class="ml-3">At ShingPong.com, we only sell genuine, authentic and brand new mobile phones with company warranty along with a 7 day replacement policy, same day delivery in Lahore and urgent shipping to Karachi, Islamabad, Peshawar and all across
+                        Pakistan. With our safe and secured payment methods and easy returns you can always trust us for secured transactions.</p>
+
+                </div>
+
+                <div class="col-lg-1 col-md-1 col-sm-1 "></div>
+                <!-- Grid column -->
+
+                <hr>
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-md-2 col-sm-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class=" mt-3 mb-4"><b>How To</b></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Order</a>
+                        </li>
+                        <li>
+                            <a href="#!">Pay</a>
+                        </li>
+                        <li>
+                            <a href="#!">Return</a>
+                        </li>
+                        <li>
+                            <a href="#!">Buy More</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr>
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-md-2 col-sm-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="mt-3 mb-4"><b>Back To</b></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!">Products</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr>
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-md-2 col-sm-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="mt-3 mb-4"><b>Products</b></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Iphone</a>
+                        </li>
+                        <li>
+                            <a href="#!">Samsung</a>
+                        </li>
+                        <li>
+                            <a href="#!">Huawei</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sony</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <hr>
+
+
+
+
+        <!-- Social buttons -->
+        <div class="text-center mx-auto">
+            <a href="https://www.facebook.com/"><img class="fa" src="img/facebook-icon.png" height="50px" width="50px"></a>
+            <a href="https://www.gmail.com/"><img class="fa" src="img/gmail.png" height="30px" width="30px" style="margin-left: 15px "></a>
+            <a href="https://www.twitter.com/"><img class="fa" src="img/twitter.png" height="50px" width="50px" style="margin-left: 15px "></a>
+            <a href="https://www.instagram.com/"><img class="fa" src="img/instagram.png" height="50px" width="50px" style="margin-left: 15px "></a>
+
+        </div>
+
+
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center mt-2">© 2019 Copyright :
+            <a href="main.php"> ShingPong.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+    <!-- Javascript Files -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
